@@ -33,7 +33,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
     <link rel="stylesheet" type="text/css" href="css/mainPortada.css">
-    <link rel="stylesheet" type="text/css" href="css/title.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/title.css">-->
     <link rel="stylesheet" href="css/sidebar-themes.css">
 <!--===============================================================================================-->
 </head>
