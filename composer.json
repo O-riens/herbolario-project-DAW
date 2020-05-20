@@ -1,0 +1,10 @@
+{
+    "name": "usuario/herbario",
+    "authors": [
+        {
+            "name": "Aurora Gómez",
+            "email": "rogoco98@gmail.com"
+        }
+    ],
+    "require": {}
+}
