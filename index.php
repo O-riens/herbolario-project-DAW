@@ -145,7 +145,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				</div>
 
 				<div class="container-login100-form-btn m-t-30">
-					<p>Forgot password? <a href="#">Restaurar</a></p>
+					<p>Forgot password? <a href="forgotPassword.php">Restaurar</a></p>
 				</div>
 
 				<div class="text-center p-t-57 p-b-20 m-b-30">
