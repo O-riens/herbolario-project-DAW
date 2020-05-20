@@ -8,7 +8,7 @@
                 <div class="sidebar-item sidebar-header d-flex flex-nowrap">
                     <div class="user-pic">
                     <?php  
-                      $db = mysqli_connect("localhost","root","","herbario"); 
+                      $db = mysqli_connect("den1.mysql6.gear.host","herbario","Informatica1*","herbario"); 
                       if($_SESSION['img'] = 'NULL'  && !isset($_SESSION['nombre'])){
                         echo '<img src="img/user.jpg"/>'; 
                       } else {

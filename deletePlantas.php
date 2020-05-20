@@ -23,9 +23,7 @@
         $id = $_GET['eliminar'];
         mysqli_query($db, "DELETE FROM plantas WHERE id=$id");
 
-        echo '<script type="text/JavaScript">  
-            alert("Se ha eliminado correctamente."); 
-        </script>';
+        header('Location: plantas.php');
     }
 ?>
 
