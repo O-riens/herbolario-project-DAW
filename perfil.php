@@ -51,7 +51,7 @@ echo $statusMsg;
 if(isset($_POST['nombreCambio']))
 {
     $user = $_SESSION['nombre'];
-    $nombre = $_POST['nombreCambio'];
+    $nombre = $_POST['nombre'];
     $insert = $db->query("UPDATE usuarios SET nombre = '$nombre' WHERE nombre = '$user'");
 
     if($insert){ 
@@ -61,12 +61,12 @@ if(isset($_POST['nombreCambio']))
 } elseif (isset($_POST['email']))
 {
     $user = $_SESSION['nombre'];
-    $email = $_POST['email'];
+    $email = $_POST['emailCambio'];
 
     $insert = $db->query("UPDATE usuarios SET email = '$email' WHERE nombre = '$user'");
 
     if($insert){ 
-        $_SESSION['email'] = $email; 
+        $_SESSION['emailCambio'] = $email; 
     }
 
 } 
@@ -161,10 +161,10 @@ if(isset($_POST['nombreCambio']))
                                 <h5 class="card-title">Nombre</h5>
                                 <hr/>
                                 <div class="input-group">
-                                    <input type="text" name="nombreCambio" class="form-control" placeholder="Nombre" aria-label="Nombre"
+                                    <input type="text" name="nombre" class="form-control" placeholder="nombre" aria-label="Nombre"
                                         aria-describedby="nombre">
                                     <div class="input-group-append">
-                                        <button type="submit" class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="nombreCambio">Cambiar</button>
+                                        <button type="submit" class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" name="nombreCambio">Cambiar</button>
                                     </div>
                                 </div>
                             </div>
@@ -175,10 +175,10 @@ if(isset($_POST['nombreCambio']))
                                 <h5 class="card-title">Email</h5>
                                 <hr/>
                                 <div class="input-group">
-                                    <input type="text" name="email" class="form-control" placeholder="Email" aria-label="Email"
+                                    <input type="text" name="emailCambio" class="form-control" placeholder="Email" aria-label="Email"
                                         aria-describedby="email">
                                     <div class="input-group-append">
-                                        <button type="submit" class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" id="email">Cambiar</button>
+                                        <button type="submit" class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" name="email">Cambiar</button>
                                     </div>
                                 </div>
                             </div>
