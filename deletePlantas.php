@@ -106,11 +106,6 @@
                                             <div class="card-header">
                                             No tienes plantas
                                             </div>
-                                            <div class="card-body">
-                                            <h5 class="card-title">Bienvenido</h5>
-                                            <p class="card-text">Usted como autor puede introducir nuevas y preciosas plantas.</p>
-                                            <a href="addPlantas.php" class="btn btn-info">Añadir plantas</a>
-                                            </div>
                                         </div>';
                                         echo '</div>';
                                         }

@@ -217,14 +217,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 <div class="form-row">
                                     <div class="form-group col-md-6 mt-1">
                                         <p class="label-txt">NOMBRE COM&Uacute;N</p>
-                                        <input type="text" id="nombreComun" name="nombreComun"  class="input">
+                                        <input type="text" id="nombreComun" name="nombreComun"  class="input" required>
                                         <div class="line-box">
                                             <div class="line"></div>
                                         </div>
                                         </div>
                                             <div class="form-group col-md-6 mt-1">
                                             <p class="label-txt">NOMBRE CIENT&Iacute;FICO</p>
-                                                <input type="text" id="nombreCientifico" name="nombreCientifico" class="input">
+                                                <input type="text" id="nombreCientifico" name="nombreCientifico" class="input" required>
                                                     <div class="line-box">
                                                 <div class="line"></div>
                                             </div>
@@ -233,14 +233,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
                                     <div class="form-group col-md-6 mt-4">
                                         <p class="label-txt">LUZ</p>
-                                        <input type="text" id="luz" name="luz" class="input">
+                                        <input type="text" id="luz" name="luz" class="input" required>
                                         <div class="line-box">
                                         <div class="line"></div>
                                         </div>
                                         </div>
                                         <div class="form-group col-md-6 mt-4">
                                         <p class="label-txt">RIEGO</p>
-                                        <input type="text" id="riego" name="riego" class="input">
+                                        <input type="text" id="riego" name="riego" class="input" required>
                                         <div class="line-box">
                                         <div class="line"></div>
                                         </div>
@@ -255,7 +255,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                         </div>
                                         <div class="form-group col-md-6 mt-4">
                                         <p class="label-txt">COLOR DE LA FLOR</p>
-                                        <input type="text" id="colorFlor" name="colorFlor" class="input">
+                                        <input type="text" id="colorFlor" name="colorFlor" class="input" required>
                                         <div class="line-box">
                                         <div class="line"></div>
                                         </div>
@@ -279,7 +279,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                        
                                     <label>
                                         <p class="label-txt">CARACTER&Iacute;STICAS</p>
-                                        <input type="text" id="caracteristicas" name="caracteristicas" class="input">
+                                        <input type="text" id="caracteristicas" name="caracteristicas" class="input" required>
                                         <div class="line-box">
                                         <div class="line"></div>
                                         </div>

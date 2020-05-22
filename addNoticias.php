@@ -173,7 +173,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 <div class="form-group col-md-12">
                                     <label>
                                         <p class="label-txt">T&Iacute;TULO</p>
-                                        <input type="text" id="titulo" name="titulo" class="input">
+                                        <input type="text" id="titulo" name="titulo" class="input" required>
                                         <div class="line-box">
                                         <div class="line"></div>
                                         </div>
@@ -182,19 +182,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                     <label>
                                         <p class="label-txt">ENTRADA</p>
                                         <br/>
-                                        <textarea id="entrada" name="entrada" style="background-color: white;" class="input"></textarea>
+                                        <textarea id="entrada" name="entrada" style="background-color: white;" class="input" required></textarea>
                                     </label>
 
                                     <label>
                                         <p class="label-txt">CUERPO</p>
                                         <br/>
-                                        <textarea id="cuerpo" name="cuerpo" style="background-color: white;" class="input"></textarea>
+                                        <textarea id="cuerpo" name="cuerpo" style="background-color: white;" class="input" required></textarea>
                                     </label>
 
                                     <label>
                                         <div class="form-group">
                                             <label for="imagen">Subir imagen</label>
-                                            <input type="file" id="image" name="image">
+                                            <input type="file" id="image" name="image" required>
                                         </div>
                                     </label>
                                     <button type="submit">submit</button>
