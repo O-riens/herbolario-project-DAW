@@ -161,7 +161,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 					<span class="help-block"><?php echo $confirm_password_err; ?></span>
 				</div>
 
-				<div class="container-login100-form-btn">
+				<div class="container-login100-form-btn p-b-50">
 					<button type="submit" class="login100-form-btn">
 						Registrarse
 					</button>
