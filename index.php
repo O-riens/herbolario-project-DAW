@@ -120,11 +120,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	<div class="container-login100" style="background-image: url('img/bg-06.jpg');">
 		<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
 			<form class="login100-form validate-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-				<span class="login100-form-title p-b-37">
-				<h2>
+				<h1 class="login100-form-title p-b-40">
 					Iniciar Sesión
-				</h2>
-				</span>
+				</h1>
 
 				<div class="wrap-input100 validate-input m-b-20 <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>" data-validate = "Formato: ex@abc.xyz">
 					<input class="input100" type="email" name="email" placeholder="email">
