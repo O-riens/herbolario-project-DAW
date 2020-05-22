@@ -125,6 +125,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				</span>
 
 				<div class="wrap-input100 validate-input m-b-20 <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>" data-validate = "Formato: ex@abc.xyz">
+					<label for="email">Email</label>
 					<input class="input100" type="email" name="email" placeholder="email">
 					<span class="focus-input100"></span>
 					<span class="help-block"><?php echo $email_err; ?></span>
@@ -132,6 +133,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 					
 
 				<div class="wrap-input100 validate-input m-b-25 <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>" data-validate = "Introduzca la contraseña">
+					<label for="password">Contraseña</label>
 					<input class="input100" type="password" name="password" placeholder="contraseña">
 					<span class="focus-input100"></span>
 					<span class="help-block"><?php echo $password_err; ?></span>
