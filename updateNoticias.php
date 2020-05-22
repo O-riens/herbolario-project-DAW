@@ -100,7 +100,7 @@
                                             </div>
                                             <div class="card-body">
                                             <h5 class="card-title">Bienvenido</h5>
-                                            <p class="card-text">Usted como autor puede introducir nuevas y preciosas noticias.</p>
+                                            <p class="card-text">¿Por qu&eacute; no añade alguna noticia?</p>
                                             <a href="addNoticias.php" class="btn btn-info">Añadir noticias</a>
                                             </div>
                                         </div>';
