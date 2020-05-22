@@ -136,7 +136,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		<div class="wrap-login100 p-l-40 p-r-40 p-t-80 p-b-30">
 			<form class="login100-form validate-form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
 				<span class="login100-form-title p-b-37">
-					Registrarse
+                    <h2>
+					    Registrarse
+                    </h2>
 				</span>
             
 				<div class="wrap-input100 validate-input m-b-20 form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>" data-validate="Introduzca el usuario">

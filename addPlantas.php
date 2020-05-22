@@ -207,7 +207,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                 <span>Mostrar/Ocultar Men&uacute;</span>
                             </a>
                         </div>
-                        <h1 class="display-4" style="text-align:center; font-style: oblique">Añadir plantas</h1>
+                        <h1 style="text-align:center;">Añadir plantas</h1>
                         <br/>
                         <!-- Page content -->
                         <div class="content">

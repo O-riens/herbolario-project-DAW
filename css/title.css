@@ -1,8 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-body {
-    background-color: #111;
-}
 
 .title {
     font-family: "Montserrat";
@@ -12,7 +8,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
     letter-spacing: 1px;
 }
 
@@ -23,9 +19,10 @@ h1 {
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: 120px;
-    line-height: .75;
-    margin: 10px 0;
+    font-size: 40px;
+    line-height: .95;
+    margin: 20px 0;
+    font-style: oblique;
 }
 /* styling my button */
 

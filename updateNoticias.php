@@ -60,7 +60,7 @@
                                 <span>Mostrar/Ocultar Men&uacute;</span>
                             </a>
                         </div>
-                        <h1 class="display-4" style="text-align:center; font-style: oblique">Sus noticias</h1>
+                        <h1 style="text-align:center;">Sus noticias</h1>
                         <br/>
                         <hr/>
                         <!-- Page content -->

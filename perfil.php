@@ -113,7 +113,7 @@ if(isset($_POST['nombreCambio']))
                             <span>Mostrar/Ocultar Men&uacute;</span>
                         </a>
                     </div>
-                        <h1 class="display-4" style="text-align:center; font-style: oblique">Ajustes</h1>
+                        <h1 style="text-align:center; ">Ajustes</h1>
                         <br/>
                         <div style="text-align:center;">
                         <?php  

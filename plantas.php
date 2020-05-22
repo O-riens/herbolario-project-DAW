@@ -52,7 +52,7 @@
                                 <span>Mostrar/Ocultar Men&uacute;</span>
                             </a>
                         </div>
-                        <h1 class="display-4" style="text-align:center; font-style: oblique">Plantas</h1>
+                        <h1 style="text-align:center;">Plantas</h1>
                         <br/>
                         <!-- Page content -->
                         <div class="content">

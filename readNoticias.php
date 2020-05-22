@@ -125,7 +125,7 @@
                             </a>
                         </div>
                         <?php
-                        echo '<h1 class="display-5" style="text-align:center; font-style: oblique">'.$articulo['titulo'].'</h1>';
+                        echo '<h1 style="text-align:center;">'.$articulo['titulo'].'</h1>';
                         ?>
                         <br/>
                         <!-- Page content -->
