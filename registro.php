@@ -160,26 +160,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				</div>
 
 				<div class="container-login100-form-btn">
-					<button class="login100-form-btn">
+					<button type="submit" class="login100-form-btn">
 						Registrarse
 					</button>
                     
-				</div>
-
-				<div class="text-center p-t-57 p-b-20">
-					<span class="txt1">
-						O regístrate con
-					</span>
-				</div>
-
-				<div class="flex-c p-b-112">
-					<a href="#" class="login100-social-item">
-						<i class="fa fa-facebook-f"></i>
-					</a>
-
-					<a href="#" class="login100-social-item">
-						<img src="img/icons/icon-google.png" alt="GOOGLE">
-					</a>
 				</div>
 
 				<div class="text-center txt2 hov1">

@@ -97,9 +97,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	            </div>
 	            <form class="card mt-4" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
 	                <div class="card-body">
-                    <div class="form-group"> <label for="email_for_pass">Introduzca su correo</label> <input class="form-control" type="text" id="email" name="email" required=""><small class="form-text text-muted">Introduzca el correo con el que se registr&oacute; en nuestra p&aacute;gina web.</small> </div>
-                    <div class="form-group"> <label for="password_for_pass">Introduzca la contraseña</label> <input class="form-control" type="password" id="password" name="password" required=""> </div>
-                    <div class="form-group"> <label for="-confirm_password_pass">Introduzca de nuevo la contraseña</label> <input class="form-control" type="password" name="confirm_password"  id="confirm_password" required=""></div>
+                    <div class="form-group"> <input class="form-control" type="text" id="email" name="email" required=""><small class="form-text text-muted">Introduzca el correo con el que se registr&oacute; en nuestra p&aacute;gina web.</small> </div>
+                    <div class="form-group"> <input class="form-control" type="password" id="password" name="password" required=""> </div>
+                    <div class="form-group"> <input class="form-control" type="password" name="confirm_password"  id="confirm_password" required=""></div>
 	                </div>
 	                <div class="card-footer"> <button class="btn btn-success" name="submit" type="submit">Obtener password</button> 
                     <button onclick="window.location.href='index.php'" class="btn btn-info" type="submit">Volver al login</button> </div>
