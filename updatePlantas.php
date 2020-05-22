@@ -92,15 +92,10 @@
                                         echo '</div>';
                                     }
                                     } else {
-                                    echo '<div class="col-xs-12 col-sm-12 col-md-12 mt-3 mb-3">';
+                                        echo '<div class="col-xs-12 col-sm-12 col-md-12 mt-3 mb-3">';
                                         echo '<div class="card text-center mt-3 mb-3">
                                         <div class="card-header">
-                                            No tienes plantas
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Bienvenido</h5>
-                                            <p class="card-text">Usted como autor puede introducir nuevas y preciosas plantas.</p>
-                                            <a href="addPlantas.php" class="btn btn-info">Añadir plantas</a>
+                                        No tienes plantas
                                         </div>
                                     </div>';
                                     echo '</div>';

@@ -274,31 +274,31 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                                 <div class="line"></div>
                                             </div>
                                         </div>
-                                        
-                                        <label>
-                                            <p class="label-txt">CARACTER&Iacute;STICAS</p>
-                                            <input type="text" id="caracteristicas" name="caracteristicas" class="input" required>
-                                            <div class="line-box">
-                                                <div class="line"></div>
-                                            </div>
-                                        </label>
-                                        
-                                        <label>
-                                            <p class="label-txt">ESTILO DE JARD&Iacute;N (Opcional)</p>
-                                            <input type="text" id="estiloJardin" name="estiloJardin" class="input">
-                                            <div class="line-box">
-                                                <div class="line"></div>
-                                            </div>
-                                        </label>
-
-                                        <label>
-                                            <div class="form-group">
-                                                <label for="imagen">Subir imagen</label>
-                                                <input type="file" id="image" name="image">
-                                            </div>
-                                        </label>
-                                        <button type="submit">submit</button>
                                     </div>
+                                    <label>
+                                        <p class="label-txt">CARACTER&Iacute;STICAS</p>
+                                        <input type="text" id="caracteristicas" name="caracteristicas" class="input" required>
+                                        <div class="line-box">
+                                            <div class="line"></div>
+                                        </div>
+                                    </label>
+                                    
+                                    <label>
+                                        <p class="label-txt">ESTILO DE JARD&Iacute;N (Opcional)</p>
+                                        <input type="text" id="estiloJardin" name="estiloJardin" class="input">
+                                        <div class="line-box">
+                                            <div class="line"></div>
+                                        </div>
+                                    </label>
+                                    <br/>
+                                    <label>
+                                        <div class="form-group">
+                                            <label for="imagen">Subir imagen</label>
+                                            <input type="file" id="image" name="image">
+                                        </div>
+                                    </label>
+                                    <br/>
+                                    <button type="submit">submit</button>                 
                                 </form>
 
                             </div>
