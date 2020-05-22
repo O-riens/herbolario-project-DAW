@@ -182,10 +182,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 					</a>
 				</div>
 
-				<div class="text-center">
-					<a href="#" class="txt2 hov1">
+				<div class="text-center txt2 hov1">
 					<a href="index.php">¿Ya tienes una cuenta? Vaya al inicio</a>
-					</a>
 				</div>
 			</form>
 
@@ -198,7 +196,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	<div id="dropDownSelect1"></div>
 	
 <!--===============================================================================================-->
-<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendors/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->

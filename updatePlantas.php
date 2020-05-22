@@ -66,61 +66,55 @@
                         <!-- Page content -->
                         <div class="content">
                             <div class="row">
-
-                                    <?php
-                                
-                                    if ($planta->num_rows > 0) {
-                                        
-                                        // output data of each row
-                                        while($row = $planta->fetch_assoc()) {
-                                            echo '<div class="col-xs-12 col-sm-6 col-md-4">';
-                                                echo '<div class="image-flip" >';
-                                                    echo '<div class="mainflip flip-0">';
-                                                            echo '<div class="card">';
-                                                                echo '<div class="card-body text-center">';
-                                                                    echo ' <p><img class="img-fluid" style="width: 40%; height: 170px; border-radius: 60px" src="data:image/jpeg;base64,'.base64_encode( $row['imagen'] ).'"></p>';
-                                                                    echo ' <div class="card-body">';
-                                                                        echo '<h4 class="card-title">'.$row["nombreComun"].'</h4>';
-                                                                    echo '</div>';
+                                <?php
+                            
+                                if ($planta->num_rows > 0) {
+                                    
+                                    // output data of each row
+                                    while($row = $planta->fetch_assoc()) {
+                                        echo '<div class="col-xs-12 col-sm-6 col-md-4">';
+                                            echo '<div class="image-flip" >';
+                                                echo '<div class="mainflip flip-0">';
+                                                        echo '<div class="card">';
+                                                            echo '<div class="card-body text-center">';
+                                                                echo ' <p><img class="img-fluid" style="width: 40%; height: 170px; border-radius: 60px" src="data:image/jpeg;base64,'.base64_encode( $row['imagen'] ).'"></p>';
+                                                                echo ' <div class="card-body">';
+                                                                    echo '<h4 class="card-title">'.$row["nombreComun"].'</h4>';
                                                                 echo '</div>';
-                                                                echo '                                                                                
-                                                                <div class="text-center">
-                                                                    <a href="formUpdatePlantas.php?edit='.$row['id'].'" id="edit" name="edit" class="btn btn-info btn-rounded mb-4">Modificar</a>
-                                                                </div>';
-                                                            echo '</div> <br/>';
-                                                           
-                                                    echo '</div>';
+                                                            echo '</div>';
+                                                            echo '                                                                                
+                                                            <div class="text-center">
+                                                                <a href="formUpdatePlantas.php?edit='.$row['id'].'" id="edit" name="edit" class="btn btn-info btn-rounded mb-4">Modificar</a>
+                                                            </div>';
+                                                        echo '</div> <br/>';
                                                 echo '</div>';
                                             echo '</div>';
-                                        }
-                                        } else {
-                                        echo '<div class="col-xs-12 col-sm-12 col-md-12 mt-3 mb-3">';
-                                            echo '<div class="card text-center mt-3 mb-3">
-                                            <div class="card-header">
+                                        echo '</div>';
+                                    }
+                                    } else {
+                                    echo '<div class="col-xs-12 col-sm-12 col-md-12 mt-3 mb-3">';
+                                        echo '<div class="card text-center mt-3 mb-3">
+                                        <div class="card-header">
                                             No tienes plantas
-                                            </div>
-                                            <div class="card-body">
+                                        </div>
+                                        <div class="card-body">
                                             <h5 class="card-title">Bienvenido</h5>
                                             <p class="card-text">Usted como autor puede introducir nuevas y preciosas plantas.</p>
                                             <a href="addPlantas.php" class="btn btn-info">Añadir plantas</a>
-                                            </div>
-                                        </div>';
-                                        echo '</div>';
-                                        }
+                                        </div>
+                                    </div>';
+                                    echo '</div>';
+                                    }
                                 ?>           
-
+                            </div>
                         </div>
-                        <!-- // Page content -->
-
-                       
+                        <!-- // Page content -->                       
+                    </div>
                 </div>
-            </div>
                 <hr>
-
+            </div>
                 <br/>
-
-
-        </main>
+            </main>
         <!-- page-content" -->
 </div>
 <!-- page-wrapper -->

@@ -198,6 +198,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                                         </div>
                                     </label>
                                     <button type="submit">submit</button>
+                                </div>
+                                </div>
                                 </form>
 
 
@@ -207,11 +209,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         <!-- // Page content -->
 
                        
+                    </div>
                 </div>
-            </div>
 
                 <br/>
-
+            
+            </div>
 
         </main>
         <!-- page-content" -->

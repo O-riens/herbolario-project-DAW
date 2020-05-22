@@ -72,57 +72,53 @@
                         <hr/>
                         <!-- Page content -->
                         <div class="container">
-                                <div class="container">
-                                    <div class="card-columns">
+                            <div class="container">
+                                <div class="card-columns">
 
-                                    <?php
-                                
-                                    if ($articulo->num_rows > 0) {
-                                        
-                                        // output data of each row
-                                        while($row = $articulo->fetch_assoc()) {
-                                            echo '<div class="card">';
-                                            echo '<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode( $row['imagen'] ).'" alt="Card image cap">';
-                                                echo '<div class="card-body">';
-                                                echo '<a href="#">';
-                                                    echo '<h5 class="card-title">'.$row["titulo"].'</h5>';
-                                                echo '</a>';
-                                                echo '<hr/>';
-                                                echo '<p class="card-text">'.$row["entrada"].'</p>';
-                                                echo '<br/>';
-                                                echo '<hr/>';
-                                                echo ' <p class="card-text text-right">'.$row['nombre'].' - '.$row['fechaPublicacion'].'</p>';
-                                                echo '</div>';
-                                                echo '                                                                                
-                                                <div class="text-center">
-                                                    <a href="deleteNoticias.php?eliminar='.$row['noticiaId'].'" id="eliminar" name="eliminar" class="btn btn-info btn-rounded mb-4">Eliminar</a>
-                                                </div>';
-                                        echo '</div>';
-                                        }
-                                        } else {
-                                        echo '<div class="col-xs-12 col-sm-12 col-md-12 mt-3 mb-3">';
-                                            echo '<div class="card text-center mt-3 mb-3">
-                                            <div class="card-header">
-                                            No tienes noticias
-                                            </div>
-                                        </div>';
-                                        echo '</div>';
-                                        }
+                                <?php
+                            
+                                if ($articulo->num_rows > 0) {
+                                    
+                                    // output data of each row
+                                    while($row = $articulo->fetch_assoc()) {
+                                        echo '<div class="card">';
+                                        echo '<img class="card-img-top" src="data:image/jpeg;base64,'.base64_encode( $row['imagen'] ).'" alt="Card image cap">';
+                                            echo '<div class="card-body">';
+                                            echo '<a href="#">';
+                                                echo '<h5 class="card-title">'.$row["titulo"].'</h5>';
+                                            echo '</a>';
+                                            echo '<hr/>';
+                                            echo '<p class="card-text">'.$row["entrada"].'</p>';
+                                            echo '<br/>';
+                                            echo '<hr/>';
+                                            echo ' <p class="card-text text-right">'.$row['nombre'].' - '.$row['fechaPublicacion'].'</p>';
+                                            echo '</div>';
+                                            echo '                                                                                
+                                            <div class="text-center">
+                                                <a href="deleteNoticias.php?eliminar='.$row['noticiaId'].'" id="eliminar" name="eliminar" class="btn btn-info btn-rounded mb-4">Eliminar</a>
+                                            </div>';
+                                    echo '</div>';
+                                    }
+                                    } else {
+                                    echo '<div class="col-xs-12 col-sm-12 col-md-12 mt-3 mb-3">';
+                                        echo '<div class="card text-center mt-3 mb-3">
+                                        <div class="card-header">
+                                        No tienes noticias
+                                        </div>
+                                    </div>';
+                                    echo '</div>';
+                                    }
                                 ?>           
-
                                 </div>
                             </div>
                         </div>
-                        <!-- // Page content -->
-
-                       
+                        <!-- // Page content -->       
+                    </div>
                 </div>
-            </div>
                 <hr>
 
                 <br/>
-
-
+            </div>
         </main>
         <!-- page-content" -->
 </div>
@@ -131,7 +127,7 @@
   
 
 
-  <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <!--===============================================================================================-->
     <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
@@ -148,8 +144,8 @@
 <!--===============================================================================================-->
 	<script src="vendors/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-  <script src="js/main.js"></script>
-  <script src="js/mainPortada.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mainPortada.js"></script>
 
 </body>
 </html>

@@ -56,73 +56,69 @@
 <div class="page-wrapper default-theme sidebar-bg bg1 toggled">
 <?php require_once "admin/includes/sidebar.php"; ?>
         <!-- page-content  -->
-        <main class="page-content" style="background-image: url(img/bg5.jpg); height: 100%;  ">
-            <div id="overlay" class="overlay"></div>
-            <div class="container-fluid p-5">
-                
-                <div class="row">
+    <main class="page-content" style="background-image: url(img/bg5.jpg); height: 100%;  ">
+        <div id="overlay" class="overlay"></div>
+        <div class="container-fluid p-5">
+            
+            <div class="row">
+                <div class="form-group col-md-12">
                     <div class="form-group col-md-12">
-                        <div class="form-group col-md-12">
-                            <a id="toggle-sidebar" class="btn btn-secondary rounded-0" href="#">
-                                <span>Mostrar/Ocultar Men&uacute;</span>
-                            </a>
-                        </div>
-                        <h1 class="display-4" style="text-align:center; font-style: oblique">Borrar plantas</h1>
-                        <br/>
-                        <!-- Page content -->
-                        <div class="content">
-                            <hr/>
-                            <div class="row">
+                        <a id="toggle-sidebar" class="btn btn-secondary rounded-0" href="#">
+                            <span>Mostrar/Ocultar Men&uacute;</span>
+                        </a>
+                    </div>
+                    <h1 class="display-4" style="text-align:center; font-style: oblique">Borrar plantas</h1>
+                    <br/>
+                    <!-- Page content -->
+                    <div class="content">
+                        <hr/>
+                        <div class="row">
 
-                                    <?php
-                                
-                                    if ($planta->num_rows > 0) {
-                                        
-                                        // output data of each row
-                                        while($row = $planta->fetch_assoc()) {
-                                            echo '<div class="col-xs-12 col-sm-6 col-md-4">';
-                                                echo '<div class="image-flip" >';
-                                                    echo '<div class="mainflip flip-0">';
-                                                            echo '<div class="card">';
-                                                                echo '<div class="card-body text-center">';
-                                                                    echo ' <p><img class="img-fluid" style="width: 40%; height: 170px; border-radius: 60px" src="data:image/jpeg;base64,'.base64_encode( $row['imagen'] ).'"></p>';
-                                                                    echo ' <div class="card-body">';
-                                                                        echo '<h4 class="card-title">'.$row["nombreComun"].'</h4>';
-                                                                    echo '</div>';
+                                <?php
+                            
+                                if ($planta->num_rows > 0) {
+                                    
+                                    // output data of each row
+                                    while($row = $planta->fetch_assoc()) {
+                                        echo '<div class="col-xs-12 col-sm-6 col-md-4">';
+                                            echo '<div class="image-flip" >';
+                                                echo '<div class="mainflip flip-0">';
+                                                        echo '<div class="card">';
+                                                            echo '<div class="card-body text-center">';
+                                                                echo ' <p><img class="img-fluid" style="width: 40%; height: 170px; border-radius: 60px" src="data:image/jpeg;base64,'.base64_encode( $row['imagen'] ).'"></p>';
+                                                                echo ' <div class="card-body">';
+                                                                    echo '<h4 class="card-title">'.$row["nombreComun"].'</h4>';
                                                                 echo '</div>';
-                                                                echo '                                                                                
-                                                                <div class="text-center">
-                                                                    <a href="deletePlantas.php?eliminar='.$row['id'].'" id="eliminar" name="eliminar" class="btn btn-info btn-rounded mb-4">Eliminar</a>
-                                                                </div>';
-                                                            echo '</div> <br/>';
-                                                           
-                                                    echo '</div>';
+                                                            echo '</div>';
+                                                            echo '                                                                                
+                                                            <div class="text-center">
+                                                                <a href="deletePlantas.php?eliminar='.$row['id'].'" id="eliminar" name="eliminar" class="btn btn-info btn-rounded mb-4">Eliminar</a>
+                                                            </div>';
+                                                        echo '</div> <br/>';
+                                                        
                                                 echo '</div>';
                                             echo '</div>';
-                                        }
-                                        } else {
-                                        echo '<div class="col-xs-12 col-sm-12 col-md-12 mt-3 mb-3">';
-                                            echo '<div class="card text-center mt-3 mb-3">
-                                            <div class="card-header">
-                                            No tienes plantas
-                                            </div>
-                                        </div>';
                                         echo '</div>';
-                                        }
-                                ?>           
-
-                        </div>
-                        <!-- // Page content -->
-
-                       
+                                    }
+                                    } else {
+                                    echo '<div class="col-xs-12 col-sm-12 col-md-12 mt-3 mb-3">';
+                                        echo '<div class="card text-center mt-3 mb-3">
+                                        <div class="card-header">
+                                        No tienes plantas
+                                        </div>
+                                    </div>';
+                                    echo '</div>';
+                                    }
+                            ?> 
+                        </div>          
+                    </div>
                 </div>
+                    <!-- // Page content -->        
             </div>
-                <hr>
-
-                <br/>
-
-
-        </main>
+        <hr>
+        </div>
+            <br/>
+    </main>
         <!-- page-content" -->
 </div>
 <!-- page-wrapper -->

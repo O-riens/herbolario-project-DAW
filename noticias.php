@@ -84,22 +84,19 @@
                                         } else {
                                         echo "No hay art&iacute;culos.";
                                         }
-                                ?>           
+                                    ?>    
+                                    </div>       
 
                                 </div>
                             </div>
+                            </div>
                         </div>
                         <!-- // Page content -->
-
-                       
                     </div>
-                </div>
                 <hr>
-
                 <br/>
+                </div>
             </div>
-
-
         </main>
         <!-- page-content" -->
 </div>
@@ -108,10 +105,10 @@
   
 
 
-  <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <!--===============================================================================================-->
-<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendors/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
@@ -125,8 +122,8 @@
 <!--===============================================================================================-->
 	<script src="vendors/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-  <script src="js/main.js"></script>
-  <script src="js/mainPortada.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mainPortada.js"></script>
 
 </body>
 </html>

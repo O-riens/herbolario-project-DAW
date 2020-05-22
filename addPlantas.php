@@ -214,104 +214,102 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             <hr>
                             <div class="row">
                                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" enctype="multipart/form-data">
-                                <div class="form-row">
-                                    <div class="form-group col-md-6 mt-1">
-                                        <p class="label-txt">NOMBRE COM&Uacute;N</p>
-                                        <input type="text" id="nombreComun" name="nombreComun"  class="input" required>
-                                        <div class="line-box">
-                                            <div class="line"></div>
-                                        </div>
-                                        </div>
-                                            <div class="form-group col-md-6 mt-1">
-                                            <p class="label-txt">NOMBRE CIENT&Iacute;FICO</p>
-                                                <input type="text" id="nombreCientifico" name="nombreCientifico" class="input" required>
-                                                    <div class="line-box">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6 mt-1">
+                                            <p class="label-txt">NOMBRE COM&Uacute;N</p>
+                                            <input type="text" id="nombreComun" name="nombreComun"  class="input" required>
+                                            <div class="line-box">
                                                 <div class="line"></div>
                                             </div>
-                                    </div>
-                                    
-
-                                    <div class="form-group col-md-6 mt-4">
-                                        <p class="label-txt">LUZ</p>
-                                        <input type="text" id="luz" name="luz" class="input" required>
-                                        <div class="line-box">
-                                        <div class="line"></div>
                                         </div>
+                                        <div class="form-group col-md-6 mt-1">
+                                            <p class="label-txt">NOMBRE CIENT&Iacute;FICO</p>
+                                            <input type="text" id="nombreCientifico" name="nombreCientifico" class="input" required>
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group col-md-6 mt-4">
+                                            <p class="label-txt">LUZ</p>
+                                            <input type="text" id="luz" name="luz" class="input" required>
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
                                         </div>
                                         <div class="form-group col-md-6 mt-4">
-                                        <p class="label-txt">RIEGO</p>
-                                        <input type="text" id="riego" name="riego" class="input" required>
-                                        <div class="line-box">
-                                        <div class="line"></div>
+                                            <p class="label-txt">RIEGO</p>
+                                            <input type="text" id="riego" name="riego" class="input" required>
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="form-group col-md-6 mt-4">
-                                        <p class="label-txt">FLORACI&Oacute;N (Opcional)</p>
-                                        <input type="text" id="floracion" name="floracion" class="input">
-                                        <div class="line-box">
-                                        <div class="line"></div>
-                                        </div>
+                                        <div class="form-group col-md-6 mt-4">
+                                            <p class="label-txt">FLORACI&Oacute;N (Opcional)</p>
+                                            <input type="text" id="floracion" name="floracion" class="input">
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
                                         </div>
                                         <div class="form-group col-md-6 mt-4">
-                                        <p class="label-txt">COLOR DE LA FLOR</p>
-                                        <input type="text" id="colorFlor" name="colorFlor" class="input" required>
-                                        <div class="line-box">
-                                        <div class="line"></div>
+                                            <p class="label-txt">COLOR DE LA FLOR</p>
+                                            <input type="text" id="colorFlor" name="colorFlor" class="input" required>
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div class="form-group col-md-6 mt-4">
-                                        <p class="label-txt">HOJAS (Opcional)</p>
-                                        <input type="text" id="hojas" name="hojas" class="input">
-                                        <div class="line-box">
-                                        <div class="line"></div>
-                                        </div>
+                                        <div class="form-group col-md-6 mt-4">
+                                            <p class="label-txt">HOJAS (Opcional)</p>
+                                            <input type="text" id="hojas" name="hojas" class="input">
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
                                         </div>
                                         <div class="form-group col-md-6 mt-4">
-                                        <p class="label-txt">TAMAÑO DE LA PLANTA (Opcional)</p>
-                                        <input type="text"id="tamañoPlanta" name="tamañoPlanta" class="input">
-                                        <div class="line-box">
-                                        <div class="line"></div>
+                                            <p class="label-txt">TAMAÑO DE LA PLANTA (Opcional)</p>
+                                            <input type="text" id="tamañoPlanta" name="tamañoPlanta" class="input">
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
                                         </div>
-                                        </div>
+                                        
+                                        <label>
+                                            <p class="label-txt">CARACTER&Iacute;STICAS</p>
+                                            <input type="text" id="caracteristicas" name="caracteristicas" class="input" required>
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </label>
+                                        
+                                        <label>
+                                            <p class="label-txt">ESTILO DE JARD&Iacute;N (Opcional)</p>
+                                            <input type="text" id="estiloJardin" name="estiloJardin" class="input">
+                                            <div class="line-box">
+                                                <div class="line"></div>
+                                            </div>
+                                        </label>
+
+                                        <label>
+                                            <div class="form-group">
+                                                <label for="imagen">Subir imagen</label>
+                                                <input type="file" id="image" name="image">
+                                            </div>
+                                        </label>
+                                        <button type="submit">submit</button>
                                     </div>
-                                       
-                                    <label>
-                                        <p class="label-txt">CARACTER&Iacute;STICAS</p>
-                                        <input type="text" id="caracteristicas" name="caracteristicas" class="input" required>
-                                        <div class="line-box">
-                                        <div class="line"></div>
-                                        </div>
-                                    </label>
-                                    
-                                    <label>
-                                        <p class="label-txt">ESTILO DE JARD&Iacute;N (Opcional)</p>
-                                        <input type="text" id="estiloJardin" name="estiloJardin" class="input">
-                                        <div class="line-box">
-                                        <div class="line"></div>
-                                        </div>
-                                    </label>
-                                    <label>
-                                        <div class="form-group">
-                                            <label for="imagen">Subir imagen</label>
-                                            <input type="file" id="image" name="image">
-                                        </div>
-                                    </label>
-                                    <button type="submit">submit</button>
                                 </form>
-
 
                             </div>
 
                         </div>
-                        <!-- // Page content -->
-
-                       
+                        <!-- // Page content -->    
                 </div>
             </div>
+            </div>
 
-                <br/>
+            <br/>
 
 
         </main>
@@ -322,10 +320,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   
 
 
-  <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <!--===============================================================================================-->
-<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+    <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendors/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
@@ -339,8 +337,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <!--===============================================================================================-->
 	<script src="vendors/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-  <script src="js/main.js"></script>
-  <script src="js/mainPortada.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/mainPortada.js"></script>
 
 </body>
 </html>

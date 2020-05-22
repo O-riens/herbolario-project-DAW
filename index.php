@@ -162,10 +162,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 				<hr/>
 
-				<div class="text-center">
-					<a href="#" class="txt2 hov1">
+				<div class="text-center txt2 hov1">
 					<a href="registro.php">Registrarse</a>
-					</a>
 				</div>
 			</form>
 
