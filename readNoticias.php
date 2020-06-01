@@ -178,7 +178,7 @@
                                             echo '</div>';
                                             echo '</div>';
                                 } else {
-                                    echo '<form action="htmlspecialchars($_SERVER["PHP_SELF"]);" method="POST" enctype="multipart/form-data">';
+                                    echo '<form action="htmlspecialchars($_SERVER['PHP_SELF']);" method="POST" enctype="multipart/form-data">';
                                     echo '<div class="form-row">';
                                     echo '<div class="form-group col-md-12">';
                                     echo '<input type="hidden" id="id" name="id" value="<?php echo $id; ?>">';
