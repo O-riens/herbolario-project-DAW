@@ -66,7 +66,7 @@
                             
                 // Attempt to execute the prepared statement
                 if(mysqli_stmt_execute($stmt)){
-                    header("Location: readNoticias.php?noticia=".$idArticulo);
+                    header("Location: noticias.php");
                 } else{
                     echo '<div class="alert alert-danger" role="alert">
                             Algo ha salido mal
@@ -220,10 +220,10 @@
   
 
 
-  	<script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <!--===============================================================================================-->
-	<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendors/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
@@ -237,8 +237,8 @@
 <!--===============================================================================================-->
 	<script src="vendors/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
-	<script src="js/mainPortada.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/mainPortada.js"></script>
 
 </body>
 </html>
