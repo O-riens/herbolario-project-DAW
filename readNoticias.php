@@ -6,14 +6,14 @@
     require_once "config/bd.php"; 
     
         
-    $id = $_GET['noticia'];	
-    $record = mysqli_query($db, "SELECT * FROM articulos a INNER JOIN usuarios u ON a.autorId = u.id WHERE noticiaId = $id");
+    $idArticulo = $_GET['noticia'];	
+    $record = mysqli_query($db, "SELECT * FROM articulos a INNER JOIN usuarios u ON a.autorId = u.id WHERE noticiaId = $idArticulo");
     $articulo = mysqli_fetch_array($record);
 
     $record2 = "SELECT * FROM articulos a 
     INNER JOIN comentarios c ON a.noticiaId = c.articuloId
     INNER JOIN usuarios u ON u.id = c.autorId
-    WHERE articuloId = ".$id.""; 
+    WHERE articuloId = ".$idArticulo.""; 
     $comentarios = $db->query($record2); 
 
     // Define variables and initialize with empty values
@@ -61,12 +61,12 @@
                 
                 // Set parameters
                 $param_autorId = $_SESSION['id'];
-                $param_articuloId = $_POST['id'];
+                $param_articuloId = $_POST['idArticulo'];
                 $param_comentario = $comentario;
                             
                 // Attempt to execute the prepared statement
                 if(mysqli_stmt_execute($stmt)){
-                    header("Location: readNoticias.php");
+                    header("Location: readNoticias.php?noticia=".$idArticulo);
                 } else{
                     echo '<div class="alert alert-danger" role="alert">
                             Algo ha salido mal
@@ -178,19 +178,25 @@
                                             echo '</div>';
                                             echo '</div>';
                                 } else {
-                                    echo '<form action="htmlspecialchars($_SERVER['PHP_SELF']);" method="POST" enctype="multipart/form-data">';
+                                    ?>
+                                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" enctype="multipart/form-data">
+                                    <?php
                                     echo '<div class="form-row">';
                                     echo '<div class="form-group col-md-12">';
-                                    echo '<input type="hidden" id="id" name="id" value="<?php echo $id; ?>">';
+                                    ?>
+                                    <input type="hidden" id="idArticulo" name="idArticulo" value="<?php echo $idArticulo; ?>">
+                                    <?php
                                     echo '<label>';
                                     echo '<p class="label-txt">COMENTARIO</p>';
                                     echo '<br/>';
                                     echo '<textarea id="comentario" name="comentario" style="background-color: white;" class="input"></textarea>';
                                     echo '</label>';
                                     echo '<button type="submit">submit</button>';
-                                    echo '</form>';
+                                    ?>
+                                    </form>
+                                    <?php
                                 }
-                                ?> 
+                                ?>
                                 </div>
                             
                             
@@ -214,10 +220,10 @@
   
 
 
-  <script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  	<script src="//malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <!--===============================================================================================-->
-<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendors/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendors/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
@@ -231,8 +237,8 @@
 <!--===============================================================================================-->
 	<script src="vendors/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
-  <script src="js/main.js"></script>
-  <script src="js/mainPortada.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/mainPortada.js"></script>
 
 </body>
 </html>
